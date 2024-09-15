@@ -7,7 +7,8 @@ body {
 a {
   color: #8c9304;
 }
-.block {
+
+.weather-app {
   background: rgba(255, 255, 255, 0.8);
   margin: 60px auto;
   padding: 20px;
@@ -15,7 +16,7 @@ a {
   max-width: 600px;
   box-shadow: 0px 10px 50px rgba(64, 50, 100, 0.08);
 }
-.one {
+header {
   border-bottom: 1px solid #dde0ab;
   padding-bottom: 30px;
 }
@@ -41,61 +42,56 @@ a {
   border-radius: 5px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.two {
-  border-bottom: 1px solid #dde0ab;
-  padding-bottom: 0px;
-  max-width: 600px;
-  max-height: 150px;
+
+main {
+  padding: 30px 0;
+}
+
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-app-city {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+.weather-app-details {
+  font-size: 16px;
+  color: gray;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.weather-app-details strong {
+  color: #ff6f3c;
 }
 
 .weather-app-temperature-container {
   display: flex;
 }
+
 .weather-app-icon {
   font-size: 44px;
   margin-top: 22px;
 }
+
 .weather-app-temperature {
   font-size: 88px;
   margin-left: 10px;
   font-weight: bold;
 }
+
 .weather-app-unit {
   margin-top: 16px;
   font-size: 28px;
 }
 
-.today-details {
-  color: grey;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
-.today-details strong {
-  color: #ff6f3c;
-}
-.today-temp {
-  font-size: 50px;
-  position: relative;
-  left: 400px;
-  top: -100px;
-}
-.three {
-  border-bottom: 1px solid #dde0ab;
-  padding-bottom: 30px;
-}
-
-.week-details {
-  color: black;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-}
-
 footer {
-  color: grey;
-  padding: 25px;
+  border-top: 1px solid #dde0ab;
+  padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
+  color: gray;
 }
